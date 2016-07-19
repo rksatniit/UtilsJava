@@ -20,8 +20,11 @@ import com.prodep.poi.mongodb.EmployeeDataBroker;
 public class ExcelWorkBookUtils {
 
 	public static void createWorkBook(String withFileName) throws Exception{
+<<<<<<< HEAD
 		//Create Blank workbook
 		//emptyWorkBook(withFileName);
+=======
+>>>>>>> 37dd338... RestWithPOI Changes
 
 		workBookWithData(withFileName);
 	}
@@ -126,6 +129,7 @@ public class ExcelWorkBookUtils {
 		System.out.println(withFileName + " written successfully");
 	}
 
+<<<<<<< HEAD
 	public static void readFromDB() throws Exception {
 
 
@@ -133,4 +137,6 @@ public class ExcelWorkBookUtils {
 	public static void createExcelFromDB() throws Exception {
 
 	}
+=======
+>>>>>>> 37dd338... RestWithPOI Changes
 }

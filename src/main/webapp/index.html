@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl"> 
+
+<input type='button' ng-click='clickToDownload()' value='Download'></input>
+</div>
+
+<p>This is a simple html page downloads the file . . </p>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+$scope.clickToDownload = function(){
+  /* $http.get("http://localhost:8080/RestWithPOIEx/rest/export/onlyexcel")
+  .then(function(response) {
+      var blob = new Blob([response.data], {type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"});
+    var objectUrl = URL.createObjectURL(blob); */
+    window.open("http://localhost:8080/RestWithPOIEx/rest/export/onlyexcel");
+  /* }); */
+}
+});
+</script>
+
+</body>
+</html>

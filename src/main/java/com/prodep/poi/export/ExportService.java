@@ -43,7 +43,7 @@ public class ExportService {
  
 	}
 	
-	private static final String FILE_PATH = "C:\\Centage\\file1.xlsx";
+	private static final String FILE_PATH = "C:\\Prodep\\file1.xlsx";
 
 	@GET
 	@Path("/get")

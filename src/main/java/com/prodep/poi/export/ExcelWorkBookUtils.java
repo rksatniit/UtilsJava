@@ -80,6 +80,7 @@ public class ExcelWorkBookUtils {
 		Map < String, Object[] > empinfo = new TreeMap < String, Object[] >();
 		empinfo.put( "1", new Object[] {"Emp ID", "First Name", "Last Name" });
 		
+		// We can enable the following code in order to work with Mongo DB
 		// Get the data from Mongo DB here
 		/*EmployeeDataBroker broker = new EmployeeDataBroker();
 		List<Employee> emps = broker.findAllEmployees();

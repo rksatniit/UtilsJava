@@ -62,7 +62,7 @@ public class ExcelWorkBookUtils {
 					}
 				}
 				//Write the workbook in file system
-				FileOutputStream out = new FileOutputStream( new File("C:\\Centage\\"+withFileName+".xlsx"));
+				FileOutputStream out = new FileOutputStream( new File("C:\\XXXX\\"+withFileName+".xlsx"));
 				workbook.write(out);
 				out.close();
 				System.out.println(withFileName + " written successfully" );
@@ -118,7 +118,7 @@ public class ExcelWorkBookUtils {
 	private static void emptyWorkBook(String withFileName) throws FileNotFoundException, IOException {
 		XSSFWorkbook workbook = new XSSFWorkbook(); 
 		//Create file system using specific name
-		FileOutputStream out = new FileOutputStream( new File("C:\\Centage\\"+withFileName+".xlsx"));
+		FileOutputStream out = new FileOutputStream( new File("C:\\XXXX\\"+withFileName+".xlsx"));
 		//write operation workbook using file out object 
 		workbook.write(out);
 		out.close();

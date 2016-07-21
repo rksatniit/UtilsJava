@@ -13,6 +13,6 @@ public class EmployeeDataBroker {
 		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"spring-beans.xml");
 		EmployeeDAO employeeDao = (EmployeeDAO) context.getBean("employeeDao");
-		return employeeDao.findAll();
+		return employeeDao.findAll(); // to get all employees
 	}
 }

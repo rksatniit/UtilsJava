@@ -17,11 +17,11 @@ public class MongoDBConn {
 	int mongodb_port=27017;
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		 // To connect to mongodb server
+		
+	
+		 // To connect to mongodb server. Port may be changed. But this needs to read from config file
         try {
-			MongoClient mongoClient = new MongoClient("localhost", 27017 );
+			MongoClient mongoClient = new MongoClient("localhost", 27019 );
 			
 			String username="blabla", password = "blablabla";
 			// Now connect to your databases

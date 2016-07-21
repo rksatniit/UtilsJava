@@ -3,6 +3,10 @@ package com.prodep.poi.mongodb;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+/*
+* Employee POJO class
+*/
+
 @Document
 public class Employee {
 	@Id

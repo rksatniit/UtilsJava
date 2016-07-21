@@ -8,7 +8,6 @@ import java.io.OutputStream;
 
 
 import javax.servlet.http.HttpServletResponse;
-//import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -69,7 +68,12 @@ public class ExportService {
         final XSSFWorkbook excel = createExcel();
         webResponse.setHeader("Content-Disposition",
 			"attachment; filename=SaveWithAnyName.xlsx");
+<<<<<<< HEAD
         //setHeader(webResponse, "export.xlsx"); // is this required ?
+=======
+	// Not needed.
+        //setHeader(webResponse, "export.xlsx");
+>>>>>>> c481c0942151b744d11aeca9ab871bc78edf5f68
         StreamingOutput streamOutput = new StreamingOutput(){
             public void write(OutputStream output) throws IOException, WebApplicationException {
                 try {

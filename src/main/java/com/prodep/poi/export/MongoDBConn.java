@@ -23,7 +23,7 @@ public class MongoDBConn {
         try {
 			MongoClient mongoClient = new MongoClient("localhost", 27017 );
 			
-			String username="maestro", password = "centaGe8008";
+			String username="blabla", password = "blablabla";
 			// Now connect to your databases
 			DB db = mongoClient.getDB("test");
 			System.out.println("Connect to database successfully");

@@ -42,15 +42,10 @@ public class ExportService {
 		return Response.status(200).entity(output).build();
  
 	}
-<<<<<<< HEAD
-	// Need to remove this Hardcode Path
-	private static final String FILE_PATH = "C:\\Centage\\file1.xlsx";
-=======
-	
-	private static final String FILE_PATH = "C:\\Prodep\\file1.xlsx";
->>>>>>> 13b1a02d33501a816c8f1764fcaf12ae23e08d3b
 
-	// the below method just needs some documenation
+	// Remove the hard coded path
+	private static final String FILE_PATH = "C:\\Prodep\\file1.xlsx";
+
 
 	@GET
 	@Path("/get")

@@ -8,7 +8,6 @@ import java.io.OutputStream;
 
 
 import javax.servlet.http.HttpServletResponse;
-//import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -69,6 +68,7 @@ public class ExportService {
         final XSSFWorkbook excel = createExcel();
         webResponse.setHeader("Content-Disposition",
 			"attachment; filename=SaveWithAnyName.xlsx");
+	// Not needed.
         //setHeader(webResponse, "export.xlsx");
         StreamingOutput streamOutput = new StreamingOutput(){
             public void write(OutputStream output) throws IOException, WebApplicationException {

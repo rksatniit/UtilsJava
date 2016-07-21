@@ -69,7 +69,7 @@ public class ExportService {
         final XSSFWorkbook excel = createExcel();
         webResponse.setHeader("Content-Disposition",
 			"attachment; filename=SaveWithAnyName.xlsx");
-        //setHeader(webResponse, "export.xlsx");
+        //setHeader(webResponse, "export.xlsx"); // is this required ?
         StreamingOutput streamOutput = new StreamingOutput(){
             public void write(OutputStream output) throws IOException, WebApplicationException {
                 try {

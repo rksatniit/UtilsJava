@@ -62,7 +62,7 @@ public class ExcelWorkBookUtils {
 					}
 				}
 				//Write the workbook in file system
-				FileOutputStream out = new FileOutputStream( new File("C:\\XXXX\\"+withFileName+".xlsx"));
+				FileOutputStream out = new FileOutputStream( new File("C:\\YYYY\\"+withFileName+".xlsx"));
 				workbook.write(out);
 				out.close();
 				System.out.println(withFileName + " written successfully" );

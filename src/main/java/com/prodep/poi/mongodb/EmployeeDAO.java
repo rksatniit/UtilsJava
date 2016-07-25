@@ -4,6 +4,7 @@ import java.util.List;
 
 public interface EmployeeDAO {
 
+	// this is for creating only the Employee class.
 	 public void create(Employee employee);
 
 	 public void update(Employee employee);

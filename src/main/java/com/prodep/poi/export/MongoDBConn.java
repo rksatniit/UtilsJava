@@ -23,15 +23,16 @@ public class MongoDBConn {
         try {
 			MongoClient mongoClient = new MongoClient("localhost", 27019 );
 			
+			// This needs some tweaks as per the Mongo DB configuration
 			String username="blabla", password = "blablabla";
 			// Now connect to your databases
 			DB db = mongoClient.getDB("test");
 			System.out.println("Connect to database successfully");
 			boolean auth = db.authenticate(username, password.toCharArray());
 			System.out.println("Authentication: "+auth);
-			
+			// This is the accountgroups table.
 			DBCollection coll = db.getCollection("accountgroups");
-	        System.out.println("Collection mycol selected successfully");
+	                System.out.println("Collection mycol selected successfully");
 				
 	         DBCursor cursor = coll.find();
 	         int i = 1;

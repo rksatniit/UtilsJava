@@ -14,6 +14,7 @@
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope, $http) {
 $scope.clickToDownload = function(){
+  /* This comment is needed */
   /* $http.get("http://localhost:8080/RestWithPOIEx/rest/export/onlyexcel")
   .then(function(response) {
       var blob = new Blob([response.data], {type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"});

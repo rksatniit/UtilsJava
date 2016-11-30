@@ -1,2 +1,2 @@
 # UtilsJava
-A sample project has java utilities 
+A sample project has java utilities to explain about JavA
